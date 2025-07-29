@@ -38,26 +38,27 @@ modules:
       - firefox-langpacks # also remove firefox dependency (not required for all packages, this is a special case)
 
   - type: default-flatpaks
-    notify: true # Send notification after install/uninstall is finished (true/false)
-    system:
-      # If no repo information is specified, Flathub will be used by default
-      install:
-        - one.ablaze.floorp
-        - org.onlyoffice.desktopeditors
-        - org.kicad.KiCad
-        - org.kicad.KiCad.Footprints
-        - org.kicat.KiCad.Packages3D
-        - org.kicat.KiCad.Symbols
-        - org.kicat.KiCad.Templates
-        - org.kde.okular
-        - org.kde.ark
-        - org.kde.krdc
-        - org.inkscape.Inkscape
-        - io.anytype.anytype
-        - it.mijorus.gearlever
-        - com.github.tchx84.Flatseal
-      remove:
-        - org.gnome.eog
+    configurations:
+      - notify: true # Send notification after install/uninstall is finished (true/false)
+        scope: system
+        # If no repo information is specified, Flathub will be used by default
+        install:
+          - one.ablaze.floorp
+          - org.onlyoffice.desktopeditors
+          - org.kicad.KiCad
+          - org.kicad.KiCad.Footprints
+          - org.kicat.KiCad.Packages3D
+          - org.kicat.KiCad.Symbols
+          - org.kicat.KiCad.Templates
+          - org.kde.okular
+          - org.kde.ark
+          - org.kde.krdc
+          - org.inkscape.Inkscape
+          - io.anytype.anytype
+          - it.mijorus.gearlever
+          - com.github.tchx84.Flatseal
+        remove:
+          - org.gnome.eog
 
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
 
