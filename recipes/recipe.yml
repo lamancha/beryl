@@ -50,7 +50,6 @@ modules:
           - io.anytype.anytype
           - org.kde.ark
           - com.usebottles.bottles
-          - com.discordapp.Discord
           - com.github.tchx84.Flatseal
           - one.ablaze.floorp
           - it.mijorus.gearlever
@@ -64,8 +63,6 @@ modules:
           - org.kde.kwalletmanager5
           - org.kde.okular
           - org.onlyoffice.desktopeditors
-          - com.slack.Slack
-          - us.zoom.Zoom
           - org.zotero.Zotero
         remove:
           - org.gnome.eog
