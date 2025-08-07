@@ -23,25 +23,26 @@ modules:
       - https://copr.fedorainfracloud.org/coprs/rok/cdemu/repo/fedora-%OS_VERSION%/rok-cdemu-fedora-%OS_VERSION%.repo # when including COPR repos, use the %OS_VERSION% magic string
       - https://download.docker.com/linux/fedora/docker-ce.repo
     install:
-      - micro
+      - apptainer
+      - cdemu-daemon
+      - cdemu-client
+      - containerd.io
       - distrobox
       - docker-ce
       - docker-ce-cli
-      - containerd.io
       - docker-buildx-plugin
       - docker-compose-plugin
       - duf
       - fish
       - fzf
+      - gcdemu
       - git
+      - kernel-devel
       - kitty
       - kitty-shell-integration
+      - micro
       - ripgrep
       - tailscale
-      - kernel-devel
-      - cdemu-daemon
-      - cdemu-client
-      - gcdemu
     remove:
       # example: removing firefox (in favor of the flatpak)
       # "firefox" is the main package, "firefox-langpacks" is a dependency
