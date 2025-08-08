@@ -24,8 +24,8 @@ modules:
       - https://download.docker.com/linux/fedora/docker-ce.repo
     install:
       - apptainer
-      - cdemu-daemon
-      - cdemu-client
+      # - cdemu-daemon
+      # - cdemu-client
       - containerd.io
       - cups-pdf
       - distrobox
@@ -36,7 +36,7 @@ modules:
       - duf
       - fish
       - fzf
-      - gcdemu
+      # - gcdemu
       - git
       - kernel-devel
       - kitty
@@ -45,7 +45,7 @@ modules:
       - micro
       - ripgrep
       - tailscale
-      - vhba
+      # - vhba
       # - vhba-kmod
       # - kmod-xpadneo
       # - ublue-os-akmods-addons
@@ -56,6 +56,11 @@ modules:
       - firefox
       - firefox-langpacks # also remove firefox dependency (not required for all packages, this is a special case)
 
+  - type: akmods
+    base: main
+    install:
+      - xone
+  
   - type: default-flatpaks
     configurations:
       - notify: true # Send notification after install/uninstall is finished (true/false)
