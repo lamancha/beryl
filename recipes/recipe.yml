@@ -46,9 +46,9 @@ modules:
       - ripgrep
       - tailscale
       - vhba
-      - vhba-kmod
+      # - vhba-kmod
       - kmod-xpadneo
-      - ublue-os-akmods-addons
+      # - ublue-os-akmods-addons
       # - akmods
     remove:
       # example: removing firefox (in favor of the flatpak)
