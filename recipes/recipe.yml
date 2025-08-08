@@ -47,7 +47,7 @@ modules:
       - tailscale
       - vhba
       # - vhba-kmod
-      - kmod-xpadneo
+      # - kmod-xpadneo
       # - ublue-os-akmods-addons
       # - akmods
     remove:
