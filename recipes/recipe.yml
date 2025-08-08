@@ -44,7 +44,10 @@ modules:
       - ripgrep
       - tailscale
       - vhba
+      - akmod-vhba
       - kmod-vhba
+      - ublue-os-akmods-addons
+      - akmods
     remove:
       # example: removing firefox (in favor of the flatpak)
       # "firefox" is the main package, "firefox-langpacks" is a dependency
@@ -60,6 +63,12 @@ modules:
           - com.github.tchx84.Flatseal
           - one.ablaze.floorp
           - it.mijorus.gearlever
+      - notify: true # Send notification after install/uninstall is finished (true/false)
+        scope: system # workaround for gnome error in bluebuild flatpak service
+        repo:
+          title: fedora
+          url: oci+https://registry.fedoraproject.org
+        install:
           - org.kde.krdc
           - org.kde.okular
           - org.kde.elisa
