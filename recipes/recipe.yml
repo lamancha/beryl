@@ -27,6 +27,7 @@ modules:
       - cdemu-daemon
       - cdemu-client
       - containerd.io
+      - cups-pdf
       - distrobox
       - docker-ce
       - docker-ce-cli
