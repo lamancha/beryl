@@ -45,7 +45,6 @@ modules:
       - duf
       - elvish
       - fish
-      - fisher
       - fzf
       - git
       - kernel-devel
