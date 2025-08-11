@@ -12,6 +12,14 @@ image-version: latest # latest is also supported if you want new updates ASAP
 # module configuration, executed in order
 # you can include multiple instances of the same module
 modules:
+  - type: os-release
+    properties:
+      ID: beryl
+      ID_LIKE: fedora
+      NAME: Beryl
+      PRETTY_NAME: Beryl Image
+      HOME_URL: "https://github.com/lamancha/beryl"
+  
   - type: files
     files:
       - source: system
@@ -21,10 +29,12 @@ modules:
     repos:
       - https://pkgs.tailscale.com/stable/fedora/tailscale.repo
       - https://copr.fedorainfracloud.org/coprs/rok/cdemu/repo/fedora-%OS_VERSION%/rok-cdemu-fedora-%OS_VERSION%.repo # when including COPR repos, use the %OS_VERSION% magic string
+      - https://copr.fedorainfracloud.org/coprs/lilay/topgrade/repo/fedora-%OS_VERSION%/lilay-topgrade-fedora-%OS_VERSION%.repo # when including COPR repos, use the %OS_VERSION% magic string
       - https://download.docker.com/linux/fedora/docker-ce.repo
     install:
       - akmods
       - apptainer
+      - bcachefs-tools
       - containerd.io
       - cups-pdf
       - distrobox
@@ -35,6 +45,7 @@ modules:
       - duf
       - elvish
       - fish
+      - fisher
       - fzf
       - git
       - kernel-devel
@@ -42,9 +53,10 @@ modules:
       - kitty-shell-integration
       - mc
       - micro
+      - neovim
       - ripgrep
       - tailscale
-      - xonsh
+      - topgrade
     remove:
       # example: removing firefox (in favor of the flatpak)
       # "firefox" is the main package, "firefox-langpacks" is a dependency
