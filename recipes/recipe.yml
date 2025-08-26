@@ -69,6 +69,10 @@ modules:
     base: main
     install:
       - xone
+
+  - type: script
+    scripts:
+      - install-autocpufreq.sh
   
   - type: default-flatpaks
     configurations:
