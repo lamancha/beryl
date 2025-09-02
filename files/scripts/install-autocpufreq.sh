@@ -6,6 +6,6 @@
 set -oue pipefail
 
 cd /tmp/
-git clone https://github.com/AdnanHodzic/auto-cpufreq.git
+git clone https://github.com/lamancha/auto-cpufreq.git
 cd auto-cpufreq
-sudo ./auto-cpufreq-installer --install
+sudo ./auto-cpufreq-installer-atomic --install
