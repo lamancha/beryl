@@ -17,7 +17,7 @@ modules:
       ID: beryl
       ID_LIKE: fedora
       NAME: Beryl
-      PRETTY_NAME: Beryl Image
+      PRETTY_NAME: Beryl
       HOME_URL: "https://github.com/lamancha/beryl"
   
   - type: files
@@ -35,6 +35,8 @@ modules:
       - akmods
       - apptainer
       - bcachefs-tools
+      - cairo-devel
+      - cairo-gobject-devel
       - containerd.io
       - cups-pdf
       - distrobox
@@ -47,12 +49,18 @@ modules:
       - fish
       - fzf
       - git
+      - gobject-introspection-devel
+      - gtk3-devel
       - kernel-devel
+      - keybinder
       - kitty
       - kitty-shell-integration
       - mc
       - micro
       - neovim
+      - python3-devel
+      - python3-pip
+      - python3-crypto
       - ripgrep
       - tailscale
       - topgrade
@@ -82,7 +90,6 @@ modules:
         install:
           - com.github.tchx84.Flatseal
           - one.ablaze.floorp
-          # - it.mijorus.gearlever
       - notify: true # Send notification after install/uninstall is finished (true/false)
         scope: system # workaround for gnome error in bluebuild flatpak service
         repo:
