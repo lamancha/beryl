@@ -35,8 +35,8 @@ modules:
       - akmods
       - apptainer
       - bcachefs-tools
-      - cairo-devel
-      - cairo-gobject-devel
+      # - cairo-devel
+      # - cairo-gobject-devel
       - containerd.io
       - cups-pdf
       - distrobox
@@ -49,8 +49,8 @@ modules:
       - fish
       - fzf
       - git
-      - gobject-introspection-devel
-      - gtk3-devel
+      # - gobject-introspection-devel
+      # - gtk3-devel
       - kernel-devel
       - keybinder
       - kitty
@@ -58,10 +58,11 @@ modules:
       - mc
       - micro
       - neovim
-      - python3-devel
-      - python3-pip
-      - python3-crypto
+      # - python3-devel
+      # - python3-pip
+      # - python3-crypto
       - ripgrep
+      - snapd
       - tailscale
       - topgrade
       - wget1
@@ -78,9 +79,9 @@ modules:
     install:
       - xone
 
-  - type: script
-    scripts:
-      - install-autocpufreq.sh
+  #- type: script
+  #  scripts:
+  #    - install-autocpufreq.sh
   
   - type: default-flatpaks
     configurations:
