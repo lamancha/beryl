@@ -35,8 +35,6 @@ modules:
       - akmods
       - apptainer
       - bcachefs-tools
-      # - cairo-devel
-      # - cairo-gobject-devel
       - containerd.io
       - cups-pdf
       - distrobox
@@ -49,8 +47,6 @@ modules:
       - fish
       - fzf
       - git
-      # - gobject-introspection-devel
-      # - gtk3-devel
       - kernel-devel
       - keybinder
       - kitty
@@ -58,9 +54,6 @@ modules:
       - mc
       - micro
       - neovim
-      # - python3-devel
-      # - python3-pip
-      # - python3-crypto
       - ripgrep
       - snapd
       - tailscale
@@ -111,8 +104,8 @@ modules:
     system:
       disabled:
         - flatpak-system-update.timer # this sometimes causes failures and I anyway use topgrade
-      enabled:
-        - snap-symlink.service
+      # enabled:
+      #  - snap-symlink.service
 
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
 
