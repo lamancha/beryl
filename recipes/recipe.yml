@@ -33,7 +33,7 @@ modules:
       - https://download.docker.com/linux/fedora/docker-ce.repo
     install:
       - akmods
-      - apptainer
+      # - apptainer
       - bcachefs-tools
       - containerd.io
       - cups-pdf
@@ -51,13 +51,17 @@ modules:
       - keybinder
       - kitty
       - kitty-shell-integration
+      - libvirt-daemon-kvm
+      - libvirt-daemon-qemu
       - mc
       - micro
       - neovim
+      - qemu-kvm
       - ripgrep
       - snapd
       - tailscale
       - topgrade
+      - virt-manager
       - wget1
       - wget1-wget
     remove:
