@@ -33,7 +33,6 @@ modules:
       - https://download.docker.com/linux/fedora/docker-ce.repo
     install:
       - akmods
-      # - apptainer
       - bcachefs-tools
       - containerd.io
       - cups-pdf
@@ -94,6 +93,7 @@ modules:
           title: fedora
           url: oci+https://registry.fedoraproject.org
         install:
+          - org.kde.calligra
           - org.kde.krdc
           - org.kde.okular
           - org.kde.elisa
