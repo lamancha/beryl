@@ -42,6 +42,7 @@ modules:
       - docker-buildx-plugin
       - docker-compose-plugin
       - fish
+      - foot
       - git
       - kernel-devel
       - keybinder
@@ -52,6 +53,7 @@ modules:
       - mc
       - micro
       - neovim
+      - ptyxis
       - qemu-kvm
       - snapd
       - tailscale
