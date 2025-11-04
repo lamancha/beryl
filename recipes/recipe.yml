@@ -41,10 +41,7 @@ modules:
       - docker-ce-cli
       - docker-buildx-plugin
       - docker-compose-plugin
-      - duf
-      - elvish
       - fish
-      - fzf
       - git
       - kernel-devel
       - keybinder
@@ -56,7 +53,6 @@ modules:
       - micro
       - neovim
       - qemu-kvm
-      - ripgrep
       - snapd
       - tailscale
       - topgrade
@@ -70,10 +66,10 @@ modules:
       - firefox-langpacks # also remove firefox dependency (not required for all packages, this is a special case)
       - wget2-wget
 
-  - type: akmods
-    base: main
-    install:
-      - xone
+#  - type: akmods
+#    base: main
+#    install:
+#      - xone
 
   #- type: script
   #  scripts:
