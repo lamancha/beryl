@@ -32,6 +32,8 @@ modules:
       - https://copr.fedorainfracloud.org/coprs/lilay/topgrade/repo/fedora-%OS_VERSION%/lilay-topgrade-fedora-%OS_VERSION%.repo # when including COPR repos, use the %OS_VERSION% magic string
       - https://download.docker.com/linux/fedora/docker-ce.repo
     install:
+      # system packages + maintenance tools
+      - age
       - akmods
       - bcachefs-tools
       - containerd.io
@@ -43,24 +45,26 @@ modules:
       - docker-compose-plugin
       - fish
       - foot
-      - git
       - kernel-devel
       - keybinder
       - kitty
       - kitty-shell-integration
       - libvirt-daemon-kvm
       - libvirt-daemon-qemu
-      - mc
       - micro
-      - neovim
-      - ptyxis
       - qemu-kvm
       - snapd
+      - syncthing
       - tailscale
       - topgrade
       - virt-manager
       - wget1
       - wget1-wget
+      # tools to pass through to containers to avoid duplicates
+      - git
+      - mc
+      - neovim
+      - tmux
     remove:
       # example: removing firefox (in favor of the flatpak)
       # "firefox" is the main package, "firefox-langpacks" is a dependency
