@@ -31,7 +31,7 @@ modules:
       - https://copr.fedorainfracloud.org/coprs/rok/cdemu/repo/fedora-%OS_VERSION%/rok-cdemu-fedora-%OS_VERSION%.repo # when including COPR repos, use the %OS_VERSION% magic string
       - https://copr.fedorainfracloud.org/coprs/lilay/topgrade/repo/fedora-%OS_VERSION%/lilay-topgrade-fedora-%OS_VERSION%.repo # when including COPR repos, use the %OS_VERSION% magic string
       - https://download.docker.com/linux/fedora/docker-ce.repo
-      - https://copr.fedorainfracloud.org/coprs/scottames/ghostty/repo/fedora-%OS_VERSION%/scottames-ghostty-fedora-%OS_VERSION%.repo
+#      - https://copr.fedorainfracloud.org/coprs/scottames/ghostty/repo/fedora-%OS_VERSION%/scottames-ghostty-fedora-%OS_VERSION%.repo
     install:
       # system packages + maintenance tools
       - age
@@ -45,8 +45,8 @@ modules:
       - docker-buildx-plugin
       - docker-compose-plugin
       - fish
-      - foot
-      - ghostty
+#      - foot
+#      - ghostty
       - kernel-devel
       - keybinder
       - kitty
@@ -117,9 +117,9 @@ modules:
 
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
 
-  - type: brew
-    nofile-limits: true # increase nofile limits
-    brew-analytics: false # disable telemetry
+#  - type: brew
+#    nofile-limits: true # increase nofile limits
+#    brew-analytics: false # disable telemetry
   
   - type: fonts
     fonts:
