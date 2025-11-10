@@ -46,7 +46,7 @@ modules:
       - docker-compose-plugin
       - fish
 #      - foot
-#      - ghostty
+      - ghostty
       - kernel-devel
       - keybinder
       - kitty
