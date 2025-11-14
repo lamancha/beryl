@@ -38,6 +38,7 @@ modules:
       - akmods
       - bcachefs-tools
       - containerd.io
+      - container-selinux
       - cups-pdf
       - distrobox
       - docker-ce
