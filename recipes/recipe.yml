@@ -82,9 +82,9 @@ modules:
 #    install:
 #      - xone
 
-  #- type: script
-  #  scripts:
-  #    - install-autocpufreq.sh
+  - type: script
+    scripts:
+      - build-virtualbox-modules.sh
   
   - type: default-flatpaks
     configurations:
