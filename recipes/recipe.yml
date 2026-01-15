@@ -32,9 +32,9 @@ modules:
       - https://copr.fedorainfracloud.org/coprs/lilay/topgrade/repo/fedora-%OS_VERSION%/lilay-topgrade-fedora-%OS_VERSION%.repo # when including COPR repos, use the %OS_VERSION% magic string
       - https://download.docker.com/linux/fedora/docker-ce.repo
       # - https://copr.fedorainfracloud.org/coprs/scottames/ghostty/repo/fedora-%OS_VERSION%/scottames-ghostty-fedora-%OS_VERSION%.repo
-      - https://download.virtualbox.org/virtualbox/rpm/fedora/virtualbox.repo
-    keys:
-      - https://www.virtualbox.org/download/oracle_vbox_2016.asc
+      # - https://download.virtualbox.org/virtualbox/rpm/fedora/virtualbox.repo
+    # keys:
+      # - https://www.virtualbox.org/download/oracle_vbox_2016.asc
     install:
       # system packages + maintenance tools
       - age
@@ -62,7 +62,7 @@ modules:
       - tailscale
       - topgrade
       - virt-manager
-      - VirtualBox-7.2
+      # - VirtualBox-7.2
       - wget1
       - wget1-wget
       # tools to pass through to containers to avoid duplicates
@@ -82,9 +82,9 @@ modules:
 #    install:
 #      - xone
 
-  - type: script
-    scripts:
-      - build-virtualbox-modules.sh
+#  - type: script
+#    scripts:
+#      - build-virtualbox-modules.sh
   
   - type: default-flatpaks
     configurations:
