@@ -62,6 +62,7 @@ modules:
       - tailscale
       - topgrade
       - virt-manager
+      - virglrenderer
       # - VirtualBox-7.2
       - wget1
       - wget1-wget
